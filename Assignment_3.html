@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Information</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+
+        .info-box {
+            border: 2px solid #4682b4;
+            background-color: #e6f7ff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        /* Task 1 */
+
+        .info-box h2, 
+        .info-box h3, 
+        .info-box h4 {
+            color: #4682b4;
+            margin: 10px 0;
+            padding: auto;
+            text-align: center;
+        }
+        /* Task 2 & 3 table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd; /* Add border to the entire table */
+        }
+
+        thead {
+            background-color: darkblue;
+            color: white;
+            border-bottom: 2px solid #4682b4; /* Add border to the table header */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            border: 2px solid black; /* Add border to the table cells */
+        }
+
+        tr:nth-child(even) {
+            background-color: grey;
+        }
+
+        tr:hover {
+            background-color: lightblue;
+        }
+
+        td:nth-child(3) {
+            font-weight: bold;
+            color: #ff5722;
+        }
+        /* Task 4 */
+        .highlight {
+            background-color: yellow;
+        }
+
+        .text-field,
+        .message, 
+        .message {
+            display: flex;
+            justify-content: flex-start; /* Align message to the left */
+            margin-top: 10px;
+            font-weight: bold; /* Make the message bold for better visibility */
+            color: #333; /* Optional: Change the text color for better contrast */
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        img {
+            width: 250px;
+            height: auto;
+        }
+        .image-container img {
+            width: 50%; /* Make the image take the full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Assessment Task 3 - Assignment 1</h1>
+    <!-- Content for Task 1 goes here -->
+    <h1>Task 1</h1>
+    <div class="info-box">
+        <h2>2236564 Mohammad Mamun</h2>
+        <h3>COMP804: Web Security</h3>
+        <h4>Assignment 1, due at the end of Week 5</h4>
+    </div>
+
+    <h1>Task 2</h1>
+    <!-- Content for Task 2 goes here -->
+    <table>
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Date</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First day to enrol for re-enrolling (continuing students)</td>
+                <td>21 Nov 2022</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Orientation</td>
+                <td>18 Jul 2023</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Lectures Commence [weeks 1-9]</td>
+                <td>24 Jul - 22 Sep 2023</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects yourself</td>
+                <td>04 Aug 2023</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects with Head of Students approval</td>
+                <td>11 Aug 2023</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CENSUS DATE</td>
+                <td>31 Aug 2023</td>
+                <td>Fees due</td>
+            </tr>
+            <tr>
+                <td>Student Services and Amenities Fees Due</td>
+                <td>01 Sep 2023</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Task 3</h1>
+    <!-- Content for Task 3 goes here -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Web Attack Overview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SQL Injection <br><br>
+                    <img src="sql_injection.png" alt="SQL Injection" width="100px"> <br><br>
+                Source: https://www.sitepoint.com/how-to-protect-your-website-against-sql-injection-attacks/</td>
+                <td>
+                    SQL injection (SQLi) is a web security vulnerability that enables an attacker to manipulate the queries that an application sends to its database. This can allow the attacker to access data that they wouldn't normally be able to see, such as data belonging to other users. The attacker may also be able to modify or delete this data, leading to lasting changes in the application's content or behavior.
+                    <br><a href=https://portswigger.net/web-security/sql-injection>Source: portswigger.net</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Cross-Site-Scripting<br><br>
+                    <img src="xss-attack.png" alt="Cross Site Scripting" width="100px"> <br><br>
+                Source: https://www.cloudflare.com/learning/security/threats/cross-site-scripting/#:~:text=Cross%2Dsite%20scripting%20(XSS),be%20inserted%20in%20several%20ways.</td>
+                <td>
+                    Cross-site scripting (XSS) is an exploit where an attacker attaches code to a legitimate website that will execute when the victim loads the website. The malicious code can be inserted in several ways. The most popular methods are adding it to the end of a URL or posting it directly onto a page that displays user-generated content. In technical terms, cross-site scripting is a client-side code injection attack.
+                    <br><a href=https://www.cloudflare.com/learning/security/threats/cross-site-scripting/#:~:text=Cross%2Dsite%20scripting%20(XSS),be%20inserted%20in%20several%20ways.>Source: www.cloudflare.com</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td> Man In The Middle Attack <br><br>
+                    <img src="MiTM.png" alt="SQL Injection" width="100px"> <br><br>
+                Source: https://threatcop.com/blog/man-in-the-middle-attack/</td>
+                <td>
+                    A man-in-the-middle (MITM) attack is a cyberattack where criminals use weak web-based protocols to insert themselves between entities in a communication channel and steal data. During such an attack, the parties involved in email, texting, or video calls are unaware that an attacker has infiltrated their conversation and is stealing their data.
+                    <br><a href=https://www.fortinet.com/resources/cyberglossary/man-in-the-middle-attack>Source: www.fortinet.com</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td> Path Traversal Attack <br><br>
+                    <img src="path_traversal.png" alt="SQL Injection" width="100px"> <br><br>
+                Source: https://www.wallarm.com/what/path-traversal-attack</td>
+                <td>
+                    Path traversal attacks, also known as directory traversal, aim to access files and directories outside the web root folder. By manipulating variables that reference files with "../" sequences or using absolute file paths, attackers may gain access to sensitive files, such as application source code or configuration. It's important to note that system-level access control limits file access, especially for locked or in-use files on the Microsoft Windows operating system.
+                    <br><a href=https://www.wallarm.com/what/path-traversal-attack>Source: www.wallarm.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td> Broken Access Control <br><br>
+                    <img src="brokenaccess.png" alt="Broken Access Control" width="100px"> <br> <br>
+                Source: https://medium.com/purplebox/broken-access-control-f82235ddf888 </td>
+                <td>
+                    Broken access control vulnerability is a critical security flaw that allows unauthorized users to access, modify, or delete data they shouldn't have access to. This occurs when an application fails to enforce access controls, enabling attackers to bypass authorization.
+                    <br><a href=https://brightsec.com/blog/broken-access-control-attack-examples-and-4-defensive-measures/#:~:text=Broken%20access%20control%20vulnerability%20is,shouldn't%20have%20access%20to.>Source: brightsec.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td> Cryptographic Failures <br><br>
+                    <img src="crypto.png" alt=" Cryptographic Failure " width="100px"> <br> <br>
+                Source: https://www.freecodecamp.org/news/why-does-cryptographic-software-fail-often-d660d3cdfdc5/ </td>
+                <td>
+                    As per OWASP, a cryptographic failure is not the cause but rather a symptom. Any failure that leads to the exposure of sensitive and critical data to an unauthorized entity can be considered a cryptographic failure.
+                    <br><a href=https://www.softwaresecured.com/post/introduction-to-cryptographic-failures>Source: www.softwaresecured.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td> Insecure Design <br><br>
+                    <img src="insecure-design.png" alt=" Insecure design " width="100px"> <br> <br>
+                Source: https://lembergsolutions.com/blog/top-5-web-attacks-and-ways-handle-them-part-2 </td>
+                <td>
+                    The vulnerability in this web application relates to various design-related risks that may arise. The main reason for design insecurities is the need for more profiling of business risks in the system under development. Additionally, design insecurities can occur due to the failure to define the correct level of design security required.
+                    <br><a href=https://lembergsolutions.com/blog/top-5-web-attacks-and-ways-handle-them-part-2>Source: lembergsolutions.com</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> Security Misconfiguration <br><br>
+                    <img src="security.png" alt=" Security Misconfiguration " width="100px"> <br> <br>
+                Source: https://www.aquasec.com/cloud-native-academy/supply-chain-security/security-misconfigurations/</td>
+                <td>
+                    Security misconfiguration occurs when security settings are not properly defined to maximize security or when services are deployed with insecure default settings. This can happen in any computing system, software application, as well as in cloud and network infrastructure. Security misconfiguration is a common cause of cyber attacks and successful data breaches.
+                    <br><a href=https://www.aquasec.com/cloud-native-academy/supply-chain-security/security-misconfigurations/>Source: www.aquasec.com</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> Vulnerable and Outdated Components <br><br>
+                    <img src="vulnerability.png" alt=" Vulnerable and outdated components " width="100px"> <br> <br>
+                Source: https://medium.com/@razzsecu18ry/owasp-top-10-vulnerabilities-how-to-prevent-them-in-2024-1c885dc3fcb9/</td>
+                <td>
+                    Vulnerable and outdated components pose security risks. A vulnerable component has known security flaws, while an outdated component lacks support and security patches. Regularly update and patch these components to secure your web application.
+                    <br><a href=https://medium.com/@razzsecu18ry/owasp-top-10-vulnerabilities-how-to-prevent-them-in-2024-1c885dc3fcb9>Source: medium.com</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> Identification and Authentication Failure <br><br>
+                    <img src="identification.png" alt=" Vulnerable and outdated components " width="100px"> <br> <br>
+                Source: https://medium.com/@razzsecu18ry/owasp-top-10-vulnerabilities-how-to-prevent-them-in-2024-1c885dc3fcb9</td>
+                <td>
+                    An identification and authentication failure occurs when a system is unable to accurately identify and/or authenticate a user. This can happen due to reasons such as weak or easily guessable passwords, lack of strong password policies enforcement, or the absence of two-factor authentication.
+                    <br><a href=https://medium.com/@razzsecu18ry/owasp-top-10-vulnerabilities-how-to-prevent-them-in-2024-1c885dc3fcb9>Source: medium.com</a>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+    <h1>Task 4</h1>
+    <!-- Content for Task 4 goes here -->
+    <div>
+        <button id="catButton" onclick="displayAnimal('cat')">Cat</button>   
+        <button id="dogButton" onclick="displayAnimal('dog')">Dog</button>
+        <button id="frogButton" onclick="displayAnimal('frog')">Frog</button>
+    </div>
+    <div class="text-field">
+        <input type="text" id="animalText" readonly>
+    </div>
+    <div class="message" id="message"></div>
+   
+    <div class="image-container">
+        <img id="catImage" src="cat.png" alt="Cat"> 
+        <img id="dogImage" src="dog.jpeg" alt="Dog">
+        <img id="frogImage" src="frog.jpg" alt="Frog">
+    </div>
+
+    <script>
+        function displayAnimal(animal) {
+            const buttons = ['catButton', 'dogButton', 'frogButton'];
+            buttons.forEach(btn => document.getElementById(btn).classList.remove('highlight'));
+
+            document.getElementById(animal + 'Button').classList.add('highlight');
+            document.getElementById('animalText').value = 'User clicks ' + animal.charAt(0).toUpperCase() + animal.slice(1);
+            document.getElementById('message').innerText = animal.charAt(0).toUpperCase() + animal.slice(1) + ' is clicked';
+
+            const images = ['catImage', 'dogImage', 'frogImage'];
+            images.forEach(img => document.getElementById(img).style.display = 'none');
+            document.getElementById(animal + 'Image').style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>
